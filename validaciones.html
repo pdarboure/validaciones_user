@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test1.css">
+    <title>---TEST 1---</title>
+</head>
+
+<h1>FORMULARIO REGISTRO</h1>
+
+<body>
+    <!--    <form class="form">
+        <p class="name"> <input type="name" placeholder="nombre"></p>
+        <p class="age"><input type="age" placeholder="edad"></p>
+        <p class="city"> <select name="city" id="city">
+                <option value="BSAS">BSAS</option>
+                <option value="BSAS" selected disabled>SELECCIONA CIUDAD</option>
+                <option value="CABA">CABA</option>
+                <option value="QQN">QQN</option>
+              </select></p>
+              <button> Enviar</button>
+    </form> -->
+
+    <p>localStorage.setItem('test', 1);</p>
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos, assumenda vitae fuga omnis reiciendis
+        tempore, perferendis, autem dolores saepe minus inventore obcaecati voluptatem! Molestias totam earum quia ab
+        nulla?</p>
+
+    <div> </div>
+
+
+    <textarea style="width:200px; height: 60px;" id="area" placeholder="Write here"></textarea>
+    <br>
+
+
+    <button onclick="localStorage.removeItem('area');area.value=''">Clear</button>
+
+    <section class="errores">
+        <ul>
+        </ul>
+    </section>
+
+    <form action="/form" method="POST" id="form">
+        <label for="">Nombre</label>
+        <input type="text" name="name" id="name">
+        <div class="text-danger" id="nameError"></div>
+
+        <label for="">Email</label>
+        <input type="email" name="email" id="email">
+        <div class="text-danger" id="emailError"></div>
+
+        <label for="">Password</label>
+        <input type="password" name="password" id="password">
+        <div class="text-danger" id="passwordError"></div>
+
+        <label for="">Repassword</label>
+        <input type="password" name="repassword" id="repassword">
+        <div class="text-danger" id="repasswordError"></div>
+
+        <button type="submit" id="button">Enviar</button>
+    </form>
+
+</body>
+<script src="script1.js"> </script>
+
+</html>
